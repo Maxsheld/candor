@@ -207,13 +207,13 @@
         "messages": {
           "values": [
             {
-              "content": "=**Session Transcript:**\n\n {{ $('Joining transcript').item.json.transcript }}"
+              "content": "=**TODAY_DATE:** {{$now}}\n\n**SESSION TRANSCRIPT:**\n\n {{ $('Joining transcript').item.json.transcript }}"
             }
           ]
         },
         "builtInTools": {},
         "options": {
-          "systemMessage": "=You are the continuity engine for an AI reflection tool. \nYour job is to read a conversation transcript and distill it into a dense, highly actionable summary.\n\nThis summary will be injected into the system prompt of the user's NEXT session. It must provide the next AI with the exact context needed to pick up the psychological thread without missing a beat.\n\nDO NOT summarize conversational pleasantries.\nDO NOT use phrases like \"The user discussed...\" or \"The AI suggested...\"\n\nWrite a single, dense paragraph (Max 200 words) covering:\n1. The Core Tension: What was the actual, underlying friction the user was wrestling with?\n2. The Resistance: What were they avoiding or blind to?\n3. The Landing Point: Where did the session end? (Did they reach clarity, commit to an action, or end in ambiguity?)\n\nExample output:\nUser is paralyzed by over-researching a career pivot to AI automation, using \"preparation\" as a shield against the fear of public failure. Defended their lack of action by claiming they need a 'perfect portfolio.' Session ended with a reluctant acknowledgment that their standards are a delay tactic. Unresolved: Will they actually publish the imperfect Project 1 draft this week, or find another excuse to iterate?\n\n"
+          "systemMessage": "=You are the continuity engine for an AI reflection tool. \nYour job is to read a conversation transcript and distill it into a dense, highly actionable summary.\n\nThis summary will be injected into the system prompt of the user's NEXT session. It must provide the next AI with the exact context needed to pick up the psychological thread without missing a beat.\n\nDO NOT summarize conversational pleasantries.\nDO NOT use phrases like \"The user discussed...\" or \"The AI suggested...\"\n\nWrite a single, dense paragraph (Max 200 words) covering:\n1. The Core Tension: What was the actual, underlying friction the user was wrestling with?\n2. The Resistance: What were they avoiding or blind to?\n3. The Landing Point: Where did the session end? (Did they reach clarity, commit to an action, or end in ambiguity?)\n"
         }
       },
       "type": "@n8n/n8n-nodes-langchain.googleGemini",
@@ -313,7 +313,7 @@
     "binaryMode": "separate",
     "availableInMCP": false
   },
-  "versionId": "35b6724a-a5e4-499a-9aa8-9e7f75982573",
+  "versionId": "20a33148-eba8-4513-8996-379e1ced0111",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "bbbabf6c8d01f1fff73e6b2ac9931bfc10cb56895631e684dbaa0924fce739ac"

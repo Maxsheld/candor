@@ -53,7 +53,7 @@ export async function POST(req: Request) {
     const modelMessages = await convertToModelMessages(messages);
 
     const result = await streamText({
-      model: google('gemini-3.1-flash-lite-preview'),
+      model: google('gemini-2.5-flash-lite'),
       messages: modelMessages,
       system: system_prompt
     });

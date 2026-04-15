@@ -206,7 +206,7 @@ export default function Home() {
             <button              
               disabled={ status === "submitted" || status === "streaming" || isEndingSession }
               onClick={handleEndSession}
-              className="ml-auto px-4 py-1.5 bg-indigo-600 rounded-full text-sm font-medium hover:bg-indigo-500 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+              className="ml-auto px-4 py-1.5 bg-amber-800 rounded-full text-sm font-medium hover:bg-amber-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {isEndingSession ? (
                 <span className="flex items-center gap-2">
